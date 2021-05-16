@@ -8,7 +8,7 @@
 
 
 CREATE TABLE departments(
-	dept_no VARCHAR, 
+	dept_no VARCHAR PRIMARY KEY, 
 	dept_name VARCHAR
 );
 
@@ -21,15 +21,15 @@ CREATE TABLE dept_emp(
 
 SELECT * FROM dept_emp;
 
-CREATE TABLE manager(	
+CREATE TABLE dept_manager(	
 	dept_no VARCHAR,
 	emp_no INT
 );
 
-SELECT * FROM manager;
+SELECT * FROM dept_manager;
 
 CREATE TABLE employees(	
-	emp_no INT,
+	emp_no INT PRIMARY KEY,
 	emp_title_id VARCHAR,
 	birth_date DATE,
 	first_name VARCHAR,
@@ -47,11 +47,11 @@ CREATE TABLE salaries(
 
 SELECT * FROM salaries;
 
-CREATE TABLE title(
-	title_id VARCHAR,
+CREATE TABLE titles(
+	title_id VARCHAR PRIMARY KEY,
     title VARCHAR
 );
 
-SELECT * FROM title;
+SELECT * FROM titles;
 
 
