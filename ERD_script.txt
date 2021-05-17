@@ -8,11 +8,13 @@ dept_name VARCHAR
 
 salaries
 ----
+id SERIAL PK
 emp_no INT FK >- employees.emp_no
 salary INT
 
 dept_emp
 ----
+id SERIAL PK
 emp_no INT FK >- employees.emp_no
 dept_no VARCHAR FK >- departments.dept_no
 
@@ -30,6 +32,7 @@ hire_date DATE
 
 dept_manager
 ----
+id SERIAL PK
 dept_no VARCHAR FK >- departments.dept_no
 emp_no INT FK >- employees.emp_no
 
